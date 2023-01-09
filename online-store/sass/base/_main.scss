@@ -1,0 +1,39 @@
+.filter-menu {
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 0 30px;
+    width: 100%;
+}
+
+.value {
+    backdrop-filter: blur(3px);
+    background-color: rgba(19, 20, 21, 0.3);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.shape {
+    align-items: center;
+    display: flex;
+}
+
+.color {
+    align-items: center;
+    display: flex;
+}
+
+.size {
+    align-items: center;
+    display: flex;
+}
+
+.favorite {
+    align-items: center;
+    display: flex;
+}
+
+button {
+    padding: 5px;
+}

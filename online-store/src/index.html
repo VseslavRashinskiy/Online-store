@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Online-Store</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <a href="#" class="logo"><img src="https://i.ibb.co/0GSWPR5/logo.png" alt="logo" /></a>
+                <h1>Christmas shop</h1>
+                <div class="basket">
+                    <div id="bucket"></div>
+                    <img src="https://i.ibb.co/3Cm1v3x/shopping.png" />
+                </div>
+            </header>
+            <main>
+                <div class="container">
+                    <div class="filter-menu">
+                        <div class="value">
+                            <h4>Filters by value</h4>
+                            <div class="shape">
+                                <p>Shape:</p>
+                                <button class="balloon">Ballon</button>
+                                <button class="snowflake">Snowflake</button>
+                                <button class="figure">Figure</button>
+                            </div>
+                            <div class="color">
+                                <p>Color:</p>
+                                <button class="filter-color type-yellow" data-filter="yellow"></button>
+                                <button class="filter-color type-white" data-filter="white"></button>
+                                <button class="filter-color type-red" data-filter="red"></button>
+                            </div>
+                            <div class="size">
+                                <p>Size:</p>
+                                <button class="big">B</button>
+                                <button class="small">S</button>
+                            </div>
+                            <div class="favorite">
+                                <p>Favorite:</p>
+                                <button class="favorite__button"></button>
+                            </div>
+                        </div>
+                        <div class="value">
+                            <h4>Range filters</h4>
+                            <p>Number</p>
+                            <div class="number-element">
+                                <div class="filter-slider" id="range-slider1"></div>
+                                <div id="filters__inputs">
+                                    <label class="filters-price__label">
+                                        <input
+                                            type="number"
+                                            min="1"
+                                            max="12"
+                                            placeholder="1"
+                                            class="filters-price__input"
+                                            id="input-0"
+                                            readonly
+                                        />
+                                    </label>
+                                    <label class="filters-price__label">
+                                        <input
+                                            type="number"
+                                            min="1"
+                                            max="12"
+                                            placeholder="12"
+                                            class="filters-price__input"
+                                            id="input-1"
+                                            readonly
+                                        />
+                                    </label>
+                                </div>
+                            </div>
+                            <p>Year</p>
+                            <div class="years-filter">
+                                <div class="filter-slider" id="range-slider2"></div>
+                                <div id="filters__inputs">
+                                    <input
+                                        type="number"
+                                        min="1940"
+                                        max="2020"
+                                        placeholder="1940"
+                                        class="filters-price__input"
+                                        id="input-2"
+                                        readonly
+                                    />
+                                    <input
+                                        type="number"
+                                        min="1940"
+                                        max="2020"
+                                        placeholder="2020"
+                                        class="filters-price__input"
+                                        id="input-3"
+                                        readonly
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="value">
+                            <h4>Search</h4>
+                            <div>
+                                <x-field>
+                                    <input
+                                        type="text"
+                                        id="text"
+                                        required="required"
+                                        placeholder="Start typing"
+                                        autofocus
+                                        autocomplete="off"
+                                    />
+                                    <span class="close" onclick="this.previousElementSibling.value = ''">
+                                        &times;
+                                    </span>
+                                </x-field>
+                            </div>
+                            <h4>Sorting</h4>
+                            <div class="search-content">
+                                <input list="browsers" name="browser" id="browser" placeholder="Default" />
+
+                                <datalist id="browsers">
+                                    <option value="Sorting by Alphabet"></option>
+                                    <option value="Sorting by revers Alphabet"></option>
+                                    <option value="Ascending sorting"></option>
+                                    <option value="Descending sorting"></option>
+                                </datalist>
+                            </div>
+                            <div class="reset">
+                                <button>filter reset</button>
+                                <button>factory reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="listing" id="products"></div>
+            </main>
+            <footer>
+                <a href="https://github.com/lopyx191">GITHUB</a>
+                <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="src" /></a>
+                <p>2022</p>
+            </footer>
+        </div>
+    </body>
+</html>
