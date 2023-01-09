@@ -1,0 +1,65 @@
+.filter-color {
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0;
+    height: 30px;
+    margin: 15px 10px;
+    outline: 0;
+    width: 30px;
+}
+
+.filter-color-active {
+    border: 2px solid black;
+}
+
+.type-yellow {
+    background-color: yellow;
+}
+
+.type-white {
+    background-color: #fff;
+}
+
+.type-red {
+    background-color: red;
+}
+
+.balloon,
+.figure,
+.snowflake {
+    cursor: pointer;
+    border: 0;
+    height: 30px;
+    width: 70px;
+    margin: 15px 10px;
+}
+
+.big {
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0;
+    height: 40px;
+    width: 40px;
+    margin: 15px 10px;
+}
+
+.small {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    border: 0;
+    height: 20px;
+    width: 20px;
+    margin: 15px 10px;
+}
+
+x-field {
+    display: inline;
+    position: relative;
+}
+x-field .close {
+    position: absolute;
+    padding: 0 5px;
+    right: 0;
+}

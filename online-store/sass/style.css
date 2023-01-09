@@ -1,0 +1,55 @@
+body {
+    background-color: beige;
+    margin: 0;
+}
+
+.header {
+    background-color: #67a0e0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 2px solid #000;
+    border-radius: 0 0 20px 20px;
+    height: 50px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+img {
+    mix-blend-mode: multiply;
+    background-size: 48px 60px;
+    font-size: 0;
+    width: 100px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.noUi-connect {
+    background-color: #5d71dd;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+    display: none;
+}
+
+.noUi-handle {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 22px;
+    height: 22px;
+}
+/*# sourceMappingURL=style.css.map */
